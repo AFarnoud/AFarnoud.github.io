@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title> Dr. Ali Farnoud  | Personal Page</title>
+    <title> Dr. Ali Farnoud | Personal Page</title>
     <style>
       body {
         background-color: #002b36;
@@ -14,16 +14,28 @@
       header {
         background: #073642;
         color: white;
-        padding: 10px 0;
-        text-align: center;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      header img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 100px;
+        height: 100px;
+      }
+      header h1 {
+        margin: 0;
       }
       nav ul {
         list-style: none;
         padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: center;
       }
       nav ul li {
-        display: inline;
-        margin: 0 10px;
+        margin: 0 15px;
       }
       nav ul li a {
         color: #268bd2;
@@ -41,11 +53,8 @@
       section {
         margin-bottom: 20px;
       }
-      h1, h2, h3 {
+      h2, h3 {
         color: #268bd2;
-      }
-      h1 {
-        margin: 0;
       }
       ul {
         list-style-type: square;
@@ -54,20 +63,28 @@
       ul ul {
         list-style-type: circle;
       }
+      .contact-info {
+        text-align: center;
+        margin: 20px 0;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Ali Farnoud</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#interests">Interests</a></li>
-        </ul>
-      </nav>
+      <img src="photo.jpeg" alt="Ali Farnoud">
+      <div>
+        <h1>Ali Farnoud</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#interests">Interests</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="about">
@@ -82,26 +99,58 @@
         <h2>Experience</h2>
         <ul>
           <li>
-            <h3>Senior Data Scientist/Engineer</h3>
+            <h3>Senior Clinical Data Scientist</h3>
             <p>
-              Boehringer Ingelheim - March 2022 - Present
+              Translational Medicine and Clinical Pharmacology - Boehringer Ingelheim Pharma GmbH & Co. KG, Biberach, Germany (March 2022 – Present)
               <ul>
-                <li>Machine learning</li>
-                <li>Computational Biology</li>
-                <li>Pharmacometrics</li>
+                <li>Co-lead of a cross-functional machine learning working group</li>
+                <li>Developed and implemented innovative analysis strategies for clinical data sciences projects</li>
+                <li>Led a biomarker analysis project using advanced machine learning models</li>
+                <li>Conducted oncology projects using physics-informed neural networks</li>
+                <li>Utilized HPC and cloud-based environments for efficient data science projects</li>
+                <li>Engaged in cross-industry scientific meetings to present and ensure adherence to state-of-the-art standards</li>
+                <li>Orchestrated a cross-functional focus group to develop a validated cloud computing environment for clinical data science applications</li>
+                <li>Initiated academic collaborations and supervised interns and postdoctoral researchers</li>
+                <li>Published over 20 scientific publications, including co-authorships in Nature Communications</li>
               </ul>
             </p>
           </li>
           <li>
             <h3>Postdoctoral Researcher</h3>
             <p>
-              Helmholtz Munich - July 2018 - February 2022
+              Institute of Computational Biology & German Lung Research Center - Helmholtz Munich, Munich, Germany (July 2018 – March 2022)
               <ul>
-                <li>Machine learning</li>
-                <li>Deep learning</li>
-                <li>Biomarker analysis</li>
-                <li>Computational Biology</li>
-                <li>Pharmacometrics</li>
+                <li>Senior postdoc at the department of computational biology</li>
+                <li>Collaborated on oncology biomarker discovery and spatial transcriptomics projects</li>
+                <li>Utilized HPC and cloud-based environments for RNA seq analysis</li>
+                <li>Collaborated with various institutions on projects related to inflammatory skin diseases</li>
+                <li>Developed machine learning models for pharmacometrics analysis</li>
+                <li>Led MATLAB code development for in-vitro cell exposure projects</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <h3>Research Scientist</h3>
+            <p>
+              Interdisciplinary Center for Scientific Computing - University of Heidelberg, Heidelberg, Germany (Feb 2015 – June 2018)
+              <ul>
+                <li>Developed predictive models for partial differential equations using HPC</li>
+                <li>Performed image processing and segmentation of 3D complex human airways from CT images</li>
+                <li>Simulated 3D airflow and analyzed drug motion for inhalers</li>
+                <li>Optimized the design of drug delivery devices</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <h3>Research Engineer</h3>
+            <p>
+              BEKO AG / TOBB University of Economics and Technology, Ankara, Turkey (March 2013 – Dec 2014)
+              <ul>
+                <li>Developed software for partial differential equations</li>
+                <li>Optimized the efficiency of washing drying machines</li>
+                <li>Teaching assistant for C++ and Engineering Mathematics courses</li>
+                <li>Top student in the department of engineering</li>
+                <li>Received a full scholarship from the Turkish Ministry of Science and Technology</li>
               </ul>
             </p>
           </li>
@@ -113,12 +162,25 @@
           <li>
             <h3>PhD in Computer Science</h3>
             <p>
-              Heidelberg University - Feb 2015 - Jun 2018
-              <ul>
-                <li>Mathematical modeling</li>
-                <li>Computer science</li>
-                <li>Numerical modeling</li>
-              </ul>
+              Heidelberg University, Germany (Feb 2015 – June 2018)
+            </p>
+          </li>
+          <li>
+            <h3>M.Sc. in Mechanical Engineering</h3>
+            <p>
+              TOBB University of Economics and Technology, Turkey (March 2013 – Dec 2014)
+            </p>
+          </li>
+          <li>
+            <h3>M.Sc. in Mechanical Engineering</h3>
+            <p>
+              Gazi University, Turkey (Jan 2012 – Feb 2013)
+            </p>
+          </li>
+          <li>
+            <h3>B.A.Sc. in Mechanical Engineering – Heat and Fluid Mechanics</h3>
+            <p>
+              University of Tabriz, Iran (Sept 2007 – Sept 2011)
             </p>
           </li>
         </ul>
@@ -126,14 +188,21 @@
       <section id="skills">
         <h2>Skills</h2>
         <ul>
-          <li>R</li>
-          <li>Python</li>
-          <li>Julia Computing</li>
-          <li>ShinyApp</li>
-          <li>Data wrangling</li>
-          <li>Machine learning</li>
-          <li>Deep learning</li>
-          <li>ODE/PDE solvers</li>
+          <li>Data preprocessing, visualization, machine learning, and deep learning</li>
+          <li>Computational biology, bioinformatics, multi-omics data analysis, biostatistics, time series predictions, PKPD modeling</li>
+          <li>Cloud computing, AWS, GCP compliant computer systems, data engineering</li>
+          <li>Programming Languages: Python, R, Julia, MATLAB, C, C++, Java</li>
+          <li>Operating Systems: Linux, Windows</li>
+          <li>Languages: English (Full Professional Proficiency), German (Fluent, B2), Turkish (Native), Persian (Native)</li>
+        </ul>
+      </section>
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul>
+          <li>Yang, L., Kumar, P., Farnoud, A., ... Multimodal imaging and deep learning unveil pulmonary delivery profiles, Nature Nanotechnology (2024, under review).</li>
+          <li>Ohnmacht, A., ..., Farnoud, A., The Cancer Biomarker Discovery Toolkit reveals response patterns, Nature Communications (2023).</li>
+          <li>Larimi, M.M., ..., Farnoud, A*. Numerical and Experimental Analysis of Drug Inhalation, Pharmaceuticals (2023).</li>
+          <!-- Add more publications as needed -->
         </ul>
       </section>
       <section id="interests">
@@ -141,6 +210,13 @@
         <p>
           Outside of work, Ali enjoys hiking, reading science fiction, and exploring new technologies.
         </p>
+      </section>
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Biberach, Germany</p>
+        <p>+4915238413322</p>
+        <p><a href="mailto:alifarnod@gmail.com" style="color: #268bd2;">alifarnod@gmail.com</a></p>
+        <p><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ&hl=en" style="color: #268bd2;">Google Scholar</a> | <a href="https://orcid.org/0000-0002-9298-5497" style="color: #268bd2;">ORCID</a></p>
       </section>
     </main>
   </body>
