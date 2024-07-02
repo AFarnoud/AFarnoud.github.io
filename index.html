@@ -3,21 +3,56 @@
   <head>
     <title> Dr. Ali Farnoud  | Personal Page</title>
     <style>
-      /* Add your CSS styles here */
       body {
         background-color: #002b36;
-        color: white;
+        color: #ffffff;
         font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        background: #073642;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: #268bd2;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 20px;
       }
       h1, h2, h3 {
         color: #268bd2;
       }
-      a {
-        color: #268bd2;
-        text-decoration: none;
+      h1 {
+        margin: 0;
       }
-      a:hover {
-        text-decoration: underline;
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+      ul ul {
+        list-style-type: circle;
       }
     </style>
   </head>
@@ -50,7 +85,6 @@
             <h3>Senior Data Scientist/Engineer</h3>
             <p>
               Boehringer Ingelheim - March 2022 - Present
-              <br>
               <ul>
                 <li>Machine learning</li>
                 <li>Computational Biology</li>
@@ -62,7 +96,6 @@
             <h3>Postdoctoral Researcher</h3>
             <p>
               Helmholtz Munich - July 2018 - February 2022
-              <br>
               <ul>
                 <li>Machine learning</li>
                 <li>Deep learning</li>
@@ -81,13 +114,11 @@
             <h3>PhD in Computer Science</h3>
             <p>
               Heidelberg University - Feb 2015 - Jun 2018
-              <br>
               <ul>
                 <li>Mathematical modeling</li>
-                <li>Computer cience</li>
-                <li>numerical modeling</li>
+                <li>Computer science</li>
+                <li>Numerical modeling</li>
               </ul>
-              
             </p>
           </li>
         </ul>
@@ -97,10 +128,20 @@
         <ul>
           <li>R</li>
           <li>Python</li>
-          <li>JuliaComputing</li>
+          <li>Julia Computing</li>
           <li>ShinyApp</li>
           <li>Data wrangling</li>
           <li>Machine learning</li>
           <li>Deep learning</li>
           <li>ODE/PDE solvers</li>
-          <li
+        </ul>
+      </section>
+      <section id="interests">
+        <h2>Interests</h2>
+        <p>
+          Outside of work, Ali enjoys hiking, reading science fiction, and exploring new technologies.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
