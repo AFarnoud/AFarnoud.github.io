@@ -21,8 +21,8 @@
       header img {
         border-radius: 50%;
         margin-right: 20px;
-        width: 100px;
-        height: 100px;
+        width: 150px; /* Increased size */
+        height: 150px; /* Increased size */
       }
       header h1 {
         margin: 0;
@@ -63,6 +63,14 @@
       ul ul {
         list-style-type: circle;
       }
+      .project-category {
+        margin-bottom: 20px;
+      }
+      .project-category img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
@@ -81,21 +89,22 @@
     <main>
       <section id="projects">
         <h2>Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1: Multimodal Imaging and Deep Learning</h3>
-            <p>Details: Multimodal imaging and deep learning unveil pulmonary delivery profiles, Nature Nanotechnology (2024, under review).</p>
-          </li>
-          <li>
-            <h3>Project 2: Cancer Biomarker Discovery Toolkit</h3>
-            <p>Details: The Cancer Biomarker Discovery Toolkit reveals response patterns, Nature Communications (2023).</p>
-          </li>
-          <li>
-            <h3>Project 3: Numerical and Experimental Analysis of Drug Inhalation</h3>
-            <p>Details: Numerical and Experimental Analysis of Drug Inhalation, Pharmaceuticals (2023).</p>
-          </li>
-          <!-- Add more projects as needed -->
-        </ul>
+        <div class="project-category">
+          <img src="project1.jpg" alt="Project 1 Image">
+          <h3>Multimodal Imaging and Deep Learning</h3>
+          <p>Details: Multimodal imaging and deep learning unveil pulmonary delivery profiles, Nature Nanotechnology (2024, under review).</p>
+        </div>
+        <div class="project-category">
+          <img src="project2.jpg" alt="Project 2 Image">
+          <h3>Cancer Biomarker Discovery Toolkit</h3>
+          <p>Details: The Cancer Biomarker Discovery Toolkit reveals response patterns, Nature Communications (2023).</p>
+        </div>
+        <div class="project-category">
+          <img src="project3.jpg" alt="Project 3 Image">
+          <h3>Numerical and Experimental Analysis of Drug Inhalation</h3>
+          <p>Details: Numerical and Experimental Analysis of Drug Inhalation, Pharmaceuticals (2023).</p>
+        </div>
+        <!-- Add more projects as needed -->
       </section>
       <section id="publications">
         <h2>Publications</h2>
