@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
   <head>
-    <title>Dr. Ali Farnoud | Resume</title>
+    <title>Dr. Ali Farnoud | Personal Page</title>
     <style>
       body {
-        background-color: #1a1a2e;
+        background-color: #0a0f1e;
         color: #e0e0e0;
         font-family: "Arial", sans-serif;
         margin: 0;
@@ -12,43 +12,42 @@
         line-height: 1.6;
       }
       header {
-        background: #16213e;
+        background: #1b1f38;
         color: white;
         padding: 20px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
       }
       header img {
         border-radius: 50%;
-        margin-right: 20px;
         width: 100px;
         height: 100px;
       }
       header h1 {
         margin: 0;
       }
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0 0 0;
+      nav {
         display: flex;
-        justify-content: center;
+        gap: 15px;
       }
-      nav ul li {
-        margin: 0 15px;
-      }
-      nav ul li a {
-        color: #4ecca3;
-        text-decoration: none;
+      nav button {
+        background-color: #4ecca3;
+        border: none;
+        padding: 10px 20px;
+        color: #1b1f38;
         font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
       }
-      nav ul li a:hover {
-        text-decoration: underline;
+      nav button:hover {
+        background-color: #3bb18e;
       }
       main {
         padding: 20px;
         max-width: 800px;
         margin: 0 auto;
+        display: none;
       }
       section {
         margin-bottom: 20px;
@@ -67,22 +66,23 @@
         text-align: center;
         margin: 20px 0;
       }
+      .active {
+        display: block;
+      }
     </style>
   </head>
   <body>
     <header>
-      <img src="photo.jpg" alt="Ali Farnoud">
       <div>
+        <img src="photo.jpg" alt="Ali Farnoud">
         <h1>Ali Farnoud</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-          </ul>
-        </nav>
       </div>
+      <nav>
+        <button onclick="showSection('resume')">Resume</button>
+        <button onclick="showSection('projects')">Projects</button>
+      </nav>
     </header>
-    <main>
+    <main id="resume" class="active">
       <section id="about">
         <h2>About</h2>
         <p>
@@ -152,5 +152,42 @@
         <p><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ&hl=en" style="color: #4ecca3;">Google Scholar</a> | <a href="https://orcid.org/0000-0002-9298-5497" style="color: #4ecca3;">ORCID</a></p>
       </section>
     </main>
+    <main id="projects">
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <h3>Project 1: Multimodal Imaging and Deep Learning</h3>
+            <p>Details: Multimodal imaging and deep learning unveil pulmonary delivery profiles, Nature Nanotechnology (2024, under review).</p>
+          </li>
+          <li>
+            <h3>Project 2: Cancer Biomarker Discovery Toolkit</h3>
+            <p>Details: The Cancer Biomarker Discovery Toolkit reveals response patterns, Nature Communications (2023).</p>
+          </li>
+          <li>
+            <h3>Project 3: Numerical and Experimental Analysis of Drug Inhalation</h3>
+            <p>Details: Numerical and Experimental Analysis of Drug Inhalation, Pharmaceuticals (2023).</p>
+          </li>
+          <!-- Add more projects as needed -->
+        </ul>
+      </section>
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+          <li>Yang, L., Kumar, P., Farnoud, A., ... Multimodal imaging and deep learning unveil pulmonary delivery profiles, Nature Nanotechnology (2024, under review).</li>
+          <li>Ohnmacht, A., ..., Farnoud, A., The Cancer Biomarker Discovery Toolkit reveals response patterns, Nature Communications (2023).</li>
+          <li>Larimi, M.M., ..., Farnoud, A*. Numerical and Experimental Analysis of Drug Inhalation, Pharmaceuticals (2023).</li>
+          <!-- Add more publications as needed -->
+        </ul>
+      </section>
+    </main>
+    <script>
+      function showSection(sectionId) {
+        document.querySelectorAll('main').forEach(main => {
+          main.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+      }
+    </script>
   </body>
 </html>
