@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Dr. Ali Farnoud | Blog</title>
+    <title>Blog | Dr. Ali Farnoud</title>
     <style>
       body {
         background-color: #1a1a2e;
@@ -17,12 +17,13 @@
         padding: 20px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
       }
       header img {
         border-radius: 50%;
         margin-right: 20px;
-        width: 150px; /* Increased size */
-        height: 150px; /* Increased size */
+        width: 150px;
+        height: 150px;
       }
       header h1 {
         margin: 0;
@@ -56,50 +57,72 @@
       h2, h3 {
         color: #4ecca3;
       }
-      .blog-post {
+      .blog-post-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .blog-post-list li {
         margin-bottom: 20px;
-        padding: 10px;
-        background-color: #16213e;
-        border-radius: 5px;
       }
-      .blog-post h3 {
-        margin-top: 0;
+      .blog-post-list li a {
+        color: #4ecca3;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
       }
-      .blog-post code {
-        background-color: #0d1b2a;
-        padding: 2px 4px;
-        border-radius: 3px;
+      .blog-post-list li a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        background: #16213e;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      .social-media a {
+        margin: 0 10px;
+        color: #4ecca3;
+        text-decoration: none;
+      }
+      .social-media a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <header>
-      <img src="photo.jpg" alt="Ali Farnoud">
       <div>
+        <img src="photo.jpg" alt="Ali Farnoud">
         <h1>Ali Farnoud</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
-        </nav>
       </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="blog">
         <h2>Blog Posts</h2>
-        <div class="blog-post">
-          <h3>Post Title 1</h3>
-          <p>This is the content of the first blog post. You can write code snippets here:</p>
-          <pre><code>print("Hello, world!")</code></pre>
-        </div>
-        <div class="blog-post">
-          <h3>Post Title 2</h3>
-          <p>This is the content of the second blog post. You can share your ideas and tutorials here.</p>
-        </div>
-        <!-- Add more blog posts as needed -->
+        <ul class="blog-post-list">
+          <li><a href="ai_portfolio_management.html">Application of AI in Portfolio Management by PolarisAI</a></li>
+          <!-- Future blog posts can be added here -->
+        </ul>
       </section>
     </main>
+    <footer>
+      <p>&copy; 2024 Ali Farnoud</p>
+      <div class="social-media">
+        <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+      </div>
+    </footer>
   </body>
 </html>
