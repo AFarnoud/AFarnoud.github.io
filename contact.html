@@ -49,11 +49,11 @@
         }
         .sidebar {
             width: 250px;
-            background: #fff;
+            background: #2c3e50; /* Darker, tech-savvy color */
             padding: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly darken the shadow */
+            color: #ecf0f1; /* Light text color for readability */
         }
         .sidebar img {
             width: 100%;
@@ -62,7 +62,7 @@
         }
         .sidebar h2 {
             margin-bottom: 15px;
-            color: #333;
+            color: #ecf0f1; /* Light text color */
         }
         .sidebar ul {
             list-style: none;
@@ -72,12 +72,12 @@
             margin-bottom: 10px;
         }
         .sidebar ul li a {
-            color: #333;
+            color: #1abc9c; /* Brighter color for links */
             text-decoration: none;
             font-weight: bold;
         }
         .sidebar ul li a:hover {
-            color: #007bff;
+            color: #16a085; /* Slightly darker hover effect */
         }
         .content {
             flex: 1;
@@ -90,12 +90,21 @@
             margin-bottom: 20px;
             text-align: left; /* Align titles to the left */
         }
-        .content p a {
+        .social-icons img {
+            width: 30px; /* Adjust the size of the logos */
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .social-icons a {
             color: #4ecca3;
             text-decoration: none;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 10px;
         }
-        .content p a:hover {
-            text-decoration: underline;
+        .social-icons a:hover {
+            color: #16a085;
         }
         footer {
             background: #16213e; /* Match the footer background with the header */
@@ -142,18 +151,33 @@
         </div>
         <div class="content">
             <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:alifarnod@gmail.com">your-email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ali-farnoud/">linkedin.com/in/yourlinkedin</a></p>
-            <p>ResearchGate: <a href="https://www.researchgate.net/profile/Ali-Farnoud">researchgate.net</a></p>
-            <p>PolarisAI: <a href="https://www.polarisai.at">polarisai.at</a></p>
+            <p>Email: <a href="mailto:alifarnod@gmail.com">alifarnod@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ali-farnoud/">
+                    <img src="linkedin-logo.png" alt="LinkedIn">linkedin.com/in/ali-farnoud
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.researchgate.net/profile/Ali-Farnoud">
+                    <img src="researchgate-logo.png" alt="ResearchGate">researchgate.net
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.polarisai.at">
+                    <img src="polarisai-logo.png" alt="PolarisAI">polarisai.at
+                </a>
+            </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Ali Farnoud</p>
         <div class="social-media">
-            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+            <a href="https://www.researchgate.net/profile/Ali-Farnoud" target="_blank">ResearchGate</a>
+            <a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/ali-farnoud/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AFarnoud/" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=hMi526QAAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-9298-5497" target="_blank">ORCID</a>
         </div>
     </footer>
 </body>
