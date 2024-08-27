@@ -1,21 +1,25 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <title>Dr. Ali Farnoud | Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ali Farnoud | AI Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #1e2a38 0%, #2e3b4e 100%);
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: #333;
+            background: #1e2a38;
             color: white;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .container {
             display: flex;
@@ -25,10 +29,12 @@
         }
         .sidebar {
             width: 250px;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
         .sidebar img {
             width: 100%;
@@ -36,39 +42,51 @@
             margin-bottom: 15px;
         }
         .sidebar h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #00d1b2;
             margin-bottom: 15px;
-            color: #333;
         }
         .sidebar ul {
             list-style: none;
             padding: 0;
         }
         .sidebar ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
         }
         .sidebar ul li a {
-            color: #333;
+            color: #00d1b2;
             text-decoration: none;
             font-weight: bold;
+            margin-left: 10px;
+            font-size: 1.1em;
         }
         .sidebar ul li a:hover {
-            color: #007bff;
+            color: #ffffff;
+        }
+        .sidebar ul li i {
+            font-size: 1.2em;
         }
         .content {
             flex: 1;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
         .content h2 {
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            color: #00d1b2;
             margin-bottom: 20px;
         }
         section {
             margin-bottom: 20px;
         }
         h3 {
-            color: #007bff;
+            color: #00d1b2;
+            margin-bottom: 10px;
         }
         ul {
             list-style-type: square;
@@ -77,41 +95,53 @@
         ul ul {
             list-style-type: circle;
         }
-        footer {
-            background: #333;
+        .footer {
+            background: #1e2a38;
             color: white;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
         }
         .social-media a {
             margin: 0 10px;
-            color: #007bff;
+            color: #00d1b2;
             text-decoration: none;
+            font-size: 1.2em;
         }
         .social-media a:hover {
+            color: #ffffff;
+        }
+        .footer .back-to-top {
+            display: block;
+            margin-top: 10px;
+            color: #00d1b2;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .footer .back-to-top:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dr. Ali Farnoud</h1>
+        <h1>Dr. Ali Farnoud | AI Expert</h1>
     </header>
     <div class="container">
         <div class="sidebar">
             <img src="photo.jpg" alt="Dr. Ali Farnoud">
             <h2>Dr. Ali Farnoud</h2>
             <ul>
-                <li><a href="index.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="https://www.researchgate.net/">ResearchGate</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-                <li><a href="https://linkedin.com/">LinkedIn</a></li>
-                <li><a href="https://github.com/">GitHub</a></li>
-                <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-                <li><a href="https://orcid.org/">ORCID</a></li>
+                <li><i class="fa fa-user"></i><a href="index.html">Resume</a></li>
+                <li><i class="fa fa-laptop"></i><a href="projects.html">Projects</a></li>
+                <li><i class="fa fa-book"></i><a href="blog.html">Blog</a></li>
+                <li><i class="fa fa-researchgate"></i><a href="https://www.researchgate.net/">ResearchGate</a></li>
+                <li><i class="fa fa-twitter"></i><a href="https://twitter.com/">Twitter</a></li>
+                <li><i class="fa fa-linkedin"></i><a href="https://linkedin.com/">LinkedIn</a></li>
+                <li><i class="fa fa-github"></i><a href="https://github.com/">GitHub</a></li>
+                <li><i class="fa fa-google"></i><a href="https://scholar.google.com/">Google Scholar</a></li>
+                <li><i class="fa fa-orcid"></i><a href="https://orcid.org/">ORCID</a></li>
             </ul>
         </div>
         <div class="content">
@@ -214,18 +244,19 @@
                 <h2>Contact Information</h2>
                 <p>Biberach, Germany</p>
                 <p>+4915238413322</p>
-                <p><a href="mailto:alifarnod@gmail.com" style="color: #007bff;">alifarnod@gmail.com</a></p>
-                <p><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ&hl=en" style="color: #007bff;">Google Scholar</a> | <a href="https://orcid.org/0000-0002-9298-5497" style="color: #007bff;">ORCID</a></p>
+                <p><a href="mailto:alifarnod@gmail.com" style="color: #00d1b2;">alifarnod@gmail.com</a></p>
+                <p><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ&hl=en" style="color: #00d1b2;">Google Scholar</a> | <a href="https://orcid.org/0000-0002-9298-5497" style="color: #00d1b2;">ORCID</a></p>
             </section>
         </div>
     </div>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Ali Farnoud</p>
         <div class="social-media">
-            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+            <a href="https://github.com/yourgithub" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourtwitter" target="_blank"><i class="fa fa-twitter"></i></a>
         </div>
+        <span class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</span>
     </footer>
 </body>
 </html>
