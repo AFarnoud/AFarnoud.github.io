@@ -1,175 +1,133 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Dr. Ali Farnoud | AI and Tech Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background: linear-gradient(135deg, #1e2a38 0%, #2e3b4e 100%);
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #1e2a38;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .sidebar {
-            width: 250px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin-right: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-        .sidebar img {
-            width: 100%;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .sidebar h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #00d1b2;
-            margin-bottom: 15px;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        .sidebar ul li a {
-            color: #00d1b2;
-            text-decoration: none;
-            font-weight: bold;
-            margin-left: 10px;
-            font-size: 1.1em;
-        }
-        .sidebar ul li a:hover {
-            color: #ffffff;
-        }
-        .sidebar ul li i {
-            font-size: 1.2em;
-        }
-        .content {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-        .content h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #00d1b2;
-            margin-bottom: 20px;
-        }
-        .project-category {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .project-category img {
-            max-width: 300px;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .project-category h3 a {
-            color: #00d1b2;
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.3em;
-        }
-        .project-category h3 a:hover {
-            color: #ffffff;
-        }
-        footer {
-            background: #1e2a38;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
-        }
-        .social-media a {
-            margin: 0 10px;
-            color: #00d1b2;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .social-media a:hover {
-            color: #ffffff;
-        }
-        .footer .back-to-top {
-            display: block;
-            margin-top: 10px;
-            color: #00d1b2;
-            cursor: pointer;
-            font-size: 0.9em;
-        }
-        .footer .back-to-top:hover {
-            text-decoration: underline;
-        }
+      body {
+        background-color: #1a1a2e;
+        color: #e0e0e0;
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        background: #16213e;
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 150px;
+        height: 150px;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: #4ecca3;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      h2, h3 {
+        color: #4ecca3;
+      }
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+      ul ul {
+        list-style-type: circle;
+      }
+      .project-category {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .project-category img {
+        max-width: 300px; /* Resize images to fit better with the text */
+        height: auto;
+        margin-bottom: 10px;
+      }
+      footer {
+        background: #16213e;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      .social-media a {
+        margin: 0 10px;
+        color: #4ecca3;
+        text-decoration: none;
+      }
+      .social-media a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Dr. Ali Farnoud | AI and Tech Projects</h1>
+      <div>
+        <img src="photo.jpg" alt="Ali Farnoud">
+        <h1>Ali Farnoud</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <div class="container">
-        <div class="sidebar">
-            <img src="photo.jpg" alt="Dr. Ali Farnoud">
-            <h2>Dr. Ali Farnoud</h2>
-            <ul>
-                <li><i class="fa fa-user"></i><a href="index.html">Resume</a></li>
-                <li><i class="fa fa-laptop"></i><a href="projects.html">Projects</a></li>
-                <li><i class="fa fa-book"></i><a href="blog.html">Blog</a></li>
-                <li><i class="fa fa-researchgate"></i><a href="https://www.researchgate.net/">ResearchGate</a></li>
-                <li><i class="fa fa-twitter"></i><a href="https://twitter.com/">Twitter</a></li>
-                <li><i class="fa fa-linkedin"></i><a href="https://linkedin.com/">LinkedIn</a></li>
-                <li><i class="fa fa-github"></i><a href="https://github.com/">GitHub</a></li>
-                <li><i class="fa fa-google"></i><a href="https://scholar.google.com/">Google Scholar</a></li>
-                <li><i class="fa fa-orcid"></i><a href="https://orcid.org/">ORCID</a></li>
-            </ul>
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-category">
+          <img src="translational_medicine.jpg" alt="Translational Medicine Image">
+          <h3><a href="translational_medicine.html">Translational Medicine and Clinical Pharmacology Data Sciences</a></h3>
         </div>
-        <div class="content">
-            <h2>Projects</h2>
-            <div class="project-category">
-                <img src="translational_medicine.jpg" alt="Translational Medicine Image">
-                <h3><a href="translational_medicine.html">Translational Medicine and Clinical Pharmacology Data Sciences</a></h3>
-            </div>
-            <div class="project-category">
-                <img src="polarisai.jpg" alt="PolarisAI Image">
-                <h3><a href="polarisai.html">Fintech (PolarisAI)</a></h3>
-                <p>PolarisAI stands out as your partner in financial innovation. Our team of experts combines cutting-edge machine learning algorithms with traditional analysis, revolutionizing asset investment strategies. With tailored solutions, precise forecasts, and adept portfolio management, we empower clients to navigate the financial landscape with confidence.</p>
-            </div>
+        <div class="project-category">
+          <img src="polarisai.jpg" alt="PolarisAI Image">
+          <h3><a href="polarisai.html">Fintech (PolarisAI)</a></h3>
+          <p>PolarisAI stands out as your partner in financial innovation. Our team of experts combines cutting-edge machine learning algorithms with traditional analysis, revolutionizing asset investment strategies. With tailored solutions, precise forecasts, and adept portfolio management, we empower clients to navigate the financial landscape with confidence.</p>
         </div>
-    </div>
+      </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Ali Farnoud</p>
-        <div class="social-media">
-            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
-        </div>
+      <p>&copy; 2024 Ali Farnoud</p>
+      <div class="social-media">
+        <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
