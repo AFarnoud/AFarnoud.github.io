@@ -4,31 +4,29 @@
     <title>Fintech (PolarisAI)</title>
     <style>
         body {
-            background-color: #1a1a2e;
-            color: #e0e0e0;
-            font-family: "Arial", sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e; /* Deep teal blue */
+            color: #ecf0f1;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: #16213e;
+            background: #0f2a44; /* Dark navy blue */
             color: white;
             padding: 10px 0;
             text-align: center;
-            position: relative;
         }
         header h1 {
             margin: 0;
-            display: inline-block;
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal */
         }
         nav ul {
             list-style: none;
             padding: 0;
             margin: 10px 0 0 0;
             display: flex;
-            justify-content: center; /* Center the navigation */
+            justify-content: center;
         }
         nav ul li {
             margin: 0 15px;
@@ -49,11 +47,16 @@
         }
         .sidebar {
             width: 250px;
-            background: #2c3e50; /* Darker, tech-savvy color */
+            background: #305f72; /* Medium blue-teal */
             padding: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly darken the shadow */
-            color: #ecf0f1; /* Light text color for readability */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #ecf0f1;
+            height: auto;
+            position: sticky;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
         }
         .sidebar img {
             width: 100%;
@@ -62,7 +65,8 @@
         }
         .sidebar h2 {
             margin-bottom: 15px;
-            color: #ecf0f1; /* Light text color */
+            color: #ecf0f1;
+            text-align: center;
         }
         .sidebar ul {
             list-style: none;
@@ -72,29 +76,24 @@
             margin-bottom: 10px;
         }
         .sidebar ul li a {
-            color: #1abc9c; /* Brighter color for links */
+            color: #1abc9c;
             text-decoration: none;
             font-weight: bold;
         }
         .sidebar ul li a:hover {
-            color: #16a085; /* Slightly darker hover effect */
+            color: #16a085;
         }
         .content {
             flex: 1;
-            background: #16213e; /* Match the content background with the header */
+            background: #193446; /* Deep teal blue */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .content h2 {
-            color: #4ecca3;
-            margin-bottom: 20px;
-            text-align: left; /* Align titles to the left */
-        }
-        .content h3 {
+        .content h2, .content h3 {
             color: #4ecca3;
         }
         footer {
-            background: #16213e;
+            background: #0f2a44;
             color: white;
             text-align: center;
             padding: 10px 0;
