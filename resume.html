@@ -1,27 +1,27 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Ali Farnoud | Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a2e; 
-            color: #e0e0e0;
+            background-color: #1a1a2e; /* Deep teal blue */
+            color: #ecf0f1;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: #16213e;
+            background: #0f2a44; /* Dark navy blue */
             color: white;
             padding: 10px 0;
             text-align: center;
-            position: relative;
         }
         header h1 {
             margin: 0;
-            display: inline-block;
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal */
         }
         nav ul {
             list-style: none;
@@ -34,7 +34,7 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal for links */
             text-decoration: none;
             font-weight: bold;
         }
@@ -49,11 +49,16 @@
         }
         .sidebar {
             width: 250px;
-            background: #2c3e50; 
+            background: #305f72; /* Medium blue-teal */
             padding: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             color: #ecf0f1;
+            height: auto;
+            position: sticky;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
         }
         .sidebar img {
             width: 100%;
@@ -63,6 +68,7 @@
         .sidebar h2 {
             margin-bottom: 15px;
             color: #ecf0f1;
+            text-align: center;
         }
         .sidebar ul {
             list-style: none;
@@ -72,7 +78,7 @@
             margin-bottom: 10px;
         }
         .sidebar ul li a {
-            color: #1abc9c; 
+            color: #1abc9c;
             text-decoration: none;
             font-weight: bold;
         }
@@ -81,7 +87,7 @@
         }
         .content {
             flex: 1;
-            background: #16213e;
+            background: #193446; /* Deep teal blue */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -90,15 +96,12 @@
             margin-bottom: 20px;
             text-align: left;
         }
-        .content ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        .content ul ul {
-            list-style-type: circle;
+        .content p, .content ul, .content h3 {
+            margin-bottom: 20px;
+            color: #ecf0f1;
         }
         footer {
-            background: #16213e;
+            background: #0f2a44;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -140,39 +143,44 @@
             </ul>
         </div>
         <div class="content">
-            <h2>Summary of Qualifications</h2>
+            <h2>Summary of Qualification</h2>
             <ul>
                 <li>Experienced in clinical data sciences, biostatistics, machine learning (ML), and PKPD modeling and simulations.</li>
-                <li>Passionate about leveraging scientific methodologies and advanced technologies to accelerate drug development.</li>
-                <li>Software development lead, cloud computing, GxP computer systems validation, business system leadership.</li>
+                <li>Managed cross-functional projects, driving innovation in quantitative clinical pharmacology.</li>
+                <li>Passionate about leveraging scientific methodologies and advanced technologies to accelerate clinical drug development.</li>
+                <li>Software development lead, cloud computing, Gxp computer systems validation, business system leadership.</li>
             </ul>
 
             <h2>Work Experience</h2>
+            <h3>Co-founder and CTO - PolarisAI</h3>
+            <p>Munich, Germany | July 2023 – Present</p>
             <ul>
-                <li>
-                    <h3>Co-Founder and CTO, PolarisAI</h3>
-                    <p>Munich, Germany | July 2023 - Present</p>
-                </li>
-                <li>
-                    <h3>Senior Data Scientist, Boehringer Ingelheim</h3>
-                    <p>Biberach, Germany | Jan 2023 - Present</p>
-                </li>
-                <!-- Additional positions will be inserted here in the same format -->
+                <li>Co-founded a startup leveraging tech and machine learning to help financial markets.</li>
+                <li>Developed a web application that utilizes fundamental and technical analysis combined with advanced ML and statistical methods to forecast financial asset futures.</li>
+                <li>Served as the technical and scientific lead of the project.</li>
+                <li>Successfully launched software for effective investment portfolio management.</li>
             </ul>
 
-            <h2>Education</h2>
+            <h3>Senior Data Scientist - Boehringer Ingelheim</h3>
+            <p>Biberach, Germany | Jan 2023 – Present</p>
             <ul>
-                <li>
-                    <h3>PhD in Applied Mathematics and Computer Science</h3>
-                    <p>Heidelberg University, Germany</p>
-                </li>
+                <li>Transitioned from pharmacometrics to TMCP Data Sciences group following company restructuring.</li>
+                <li>Led Data & Tech ML activities in cross-functional ML group.</li>
+                <li>Conducted biomarker analysis using advanced ML for NAFLD fibrosis prediction.</li>
+                <li>Collaborated on QSP Copilot integrating large language models.</li>
             </ul>
+
+            <!-- Add other positions from your resume as needed -->
+
+            <h2>Education</h2>
+            <h3>PhD in Applied Mathematics and Computer Science</h3>
+            <p>Heidelberg University, Germany | Feb 2015 – June 2018</p>
 
             <h2>Skills</h2>
             <ul>
-                <li>Data preprocessing, visualization, machine learning, and deep learning</li>
-                <li>Cloud computing, AWS, GCP compliant computer systems, data engineering</li>
-                <li>Programming Languages: Python, R, Julia, MATLAB, C, C++</li>
+                <li>Data preprocessing, visualization, machine learning, deep learning</li>
+                <li>Computational biology, bioinformatics, multi-omics data analysis</li>
+                <li>Programming Languages: Python, R, Julia, MATLAB, C, C++, Java</li>
             </ul>
         </div>
     </div>
@@ -183,8 +191,6 @@
             <a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a>
             <a href="https://www.linkedin.com/in/ali-farnoud/" target="_blank">LinkedIn</a>
             <a href="https://github.com/AFarnoud/" target="_blank">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=hMi526QAAAAJ" target="_blank">Google Scholar</a>
-            <a href="https://orcid.org/0000-0002-9298-5497" target="_blank">ORCID</a>
         </div>
     </footer>
 </body>
