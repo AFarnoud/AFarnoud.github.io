@@ -1,40 +1,38 @@
 <!doctype html>
 <html>
 <head>
-    <title>Dr. Ali Farnoud</title>
+    <title>Dr. Ali Farnoud | Personal Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a2e; /* Keep the background color consistent */
-            color: #e0e0e0;
+            background-color: #1a1a2e; /* Deep teal blue */
+            color: #ecf0f1;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: #16213e;
+            background: #0f2a44; /* Dark navy blue */
             color: white;
             padding: 10px 0;
             text-align: center;
-            position: relative;
         }
         header h1 {
             margin: 0;
-            display: inline-block;
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal */
         }
         nav ul {
             list-style: none;
             padding: 0;
             margin: 10px 0 0 0;
             display: flex;
-            justify-content: center; /* Center the navigation */
+            justify-content: center;
         }
         nav ul li {
             margin: 0 15px;
         }
         nav ul li a {
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal for links */
             text-decoration: none;
             font-weight: bold;
         }
@@ -49,11 +47,16 @@
         }
         .sidebar {
             width: 250px;
-            background: #2c3e50; /* Darker, tech-savvy color */
+            background: #305f72; /* Medium blue-teal */
             padding: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly darken the shadow */
-            color: #ecf0f1; /* Light text color for readability */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #ecf0f1;
+            height: auto; /* Automatically adjust the height to the content */
+            position: sticky; /* Sidebar sticks but doesn't scroll down */
+            top: 20px; /* The sidebar stays fixed after scrolling */
+            display: flex;
+            flex-direction: column;
         }
         .sidebar img {
             width: 100%;
@@ -62,7 +65,8 @@
         }
         .sidebar h2 {
             margin-bottom: 15px;
-            color: #ecf0f1; /* Light text color */
+            color: #ecf0f1;
+            text-align: center;
         }
         .sidebar ul {
             list-style: none;
@@ -72,30 +76,29 @@
             margin-bottom: 10px;
         }
         .sidebar ul li a {
-            color: #1abc9c; /* Brighter color for links */
+            color: #1abc9c;
             text-decoration: none;
             font-weight: bold;
         }
         .sidebar ul li a:hover {
-            color: #16a085; /* Slightly darker hover effect */
+            color: #16a085;
         }
-
         .content {
             flex: 1;
-            background: #16213e;
+            background: #193446; /* Deep teal blue */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .content h2 {
             color: #4ecca3;
             margin-bottom: 20px;
-            text-align: left; /* Align titles to the left */
+            text-align: left;
         }
         .content p {
-            color: #e0e0e0;
+            margin-bottom: 20px;
         }
         footer {
-            background: #16213e;
+            background: #0f2a44;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -116,7 +119,7 @@
         <h1>Dr. Ali Farnoud</h1>
         <nav>
             <ul>
-                <<li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -128,25 +131,32 @@
             <img src="photo.jpg" alt="Dr. Ali Farnoud">
             <h2>Dr. Ali Farnoud</h2>
             <ul>
-                <li><a href="https://www.researchgate.net/">ResearchGate</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-                <li><a href="https://linkedin.com/">LinkedIn</a></li>
-                <li><a href="https://github.com/">GitHub</a></li>
-                <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-                <li><a href="https://orcid.org/">ORCID</a></li>
+                <li><a href="https://www.researchgate.net/profile/Ali-Farnoud">ResearchGate</a></li>
+                <li><a href="https://x.com/Farnoud_Ali">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/ali-farnoud/">LinkedIn</a></li>
+                <li><a href="https://github.com/AFarnoud/">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ">Google Scholar</a></li>
+                <li><a href="https://orcid.org/0000-0002-9298-5497">ORCID</a></li>
             </ul>
         </div>
-        <div class="content"
-            <h2>Welcome</h2>
-            <p>Welcome to my personal website. I am a data scientist with a passion for leveraging technology and scientific methods to solve complex problems in both the pharmaceutical and financial industries. Explore my projects, read my blog posts, and if you would like to collaborate I look forward to hear from you!.</p>
+        <div class="content">
+            <h2>Welcome to My Personal Portfolio</h2>
+            <p>Hello! I'm Dr. Ali Farnoud, a seasoned data scientist and engineer specializing in clinical data science, pharmacometrics, and FinTech solutions. This website is a hub for my work, projects, and insights into the latest in AI, machine learning, and data science applications.</p>
+            <h2>Explore My Work</h2>
+            <p>Feel free to navigate through my <strong>resume</strong>, <strong>projects</strong>, and <strong>blog</strong> to see my latest work and publications. I work on a wide range of topics, from computational biology to finance technologies.</p>
+            <h2>Stay Updated</h2>
+            <p>I regularly update my blog with new insights and tutorials, especially in areas like portfolio management, AI applications, and scientific programming.</p>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Ali Farnoud</p>
         <div class="social-media">
-            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+            <a href="https://www.researchgate.net/profile/Ali-Farnoud" target="_blank">ResearchGate</a>
+            <a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/ali-farnoud/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AFarnoud/" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=hMi526QAAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-9298-5497" target="_blank">ORCID</a>
         </div>
     </footer>
 </body>
