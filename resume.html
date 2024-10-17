@@ -5,30 +5,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a2e; /* Keep the background color consistent */
-            color: #e0e0e0;
+            background-color: #1a1a2e; /* Deep teal blue */
+            color: #ecf0f1;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: #16213e; /* Match the background color of the header */
+            background: #0f2a44; /* Dark navy blue */
             color: white;
             padding: 10px 0;
             text-align: center;
-            position: relative;
         }
         header h1 {
             margin: 0;
-            display: inline-block;
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal */
         }
         nav ul {
             list-style: none;
             padding: 0;
             margin: 10px 0 0 0;
             display: flex;
-            justify-content: center; /* Center the navigation */
+            justify-content: center;
         }
         nav ul li {
             margin: 0 15px;
@@ -49,11 +47,16 @@
         }
         .sidebar {
             width: 250px;
-            background: #2c3e50; /* Darker, tech-savvy color */
+            background: #305f72; /* Medium blue-teal */
             padding: 20px;
             margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly darken the shadow */
-            color: #ecf0f1; /* Light text color for readability */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #ecf0f1;
+            position: sticky;
+            top: 20px;
+            height: auto; /* Adjusts to fit content */
+            display: flex;
+            flex-direction: column;
         }
         .sidebar img {
             width: 100%;
@@ -62,7 +65,8 @@
         }
         .sidebar h2 {
             margin-bottom: 15px;
-            color: #ecf0f1; /* Light text color */
+            color: #ecf0f1;
+            text-align: center;
         }
         .sidebar ul {
             list-style: none;
@@ -72,23 +76,23 @@
             margin-bottom: 10px;
         }
         .sidebar ul li a {
-            color: #1abc9c; /* Brighter color for links */
+            color: #1abc9c;
             text-decoration: none;
             font-weight: bold;
         }
         .sidebar ul li a:hover {
-            color: #16a085; /* Slightly darker hover effect */
+            color: #16a085;
         }
         .content {
             flex: 1;
-            background: #16213e; /* Match the content background with the header */
+            background: #193446; /* Deep teal blue */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .content h2 {
             color: #4ecca3;
             margin-bottom: 20px;
-            text-align: left; /* Align titles to the left */
+            text-align: left;
         }
         .content ul {
             list-style-type: square;
@@ -98,7 +102,7 @@
             list-style-type: circle;
         }
         footer {
-            background: #16213e; /* Match the footer background with the header */
+            background: #0f2a44;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -142,19 +146,15 @@
         <div class="content">
             <h2>About</h2>
             <p>
-                Ali Farnoud is a senior Data Scientist at Boehringer Ingelheim. He received his
-                PhD from Heidelberg University. Afterwards, he was a postdoctoral researcher in Helmholtz
-                Munich in the department of Computational Biology and the German Lung Research Center.
+                Ali Farnoud is a senior Data Scientist at Boehringer Ingelheim. He received his PhD from Heidelberg University. Afterwards, he was a postdoctoral researcher in Helmholtz Munich in the department of Computational Biology and the German Lung Research Center.
                 Ali is currently working as a senior clinical data scientist at Boehringer Ingelheim and is a co-founder and CTO at PolarisAI Fintech company.
             </p>
-
             <h2>Summary of Qualifications</h2>
             <ul>
                 <li>Data preprocessing, visualization, machine learning, and deep learning, physics-informed neural networks (R, Python, Julia, C++)</li>
                 <li>Computational biology, bioinformatics, multi-omics data analysis, biostatistics, time series predictions, PKPD modeling</li>
                 <li>Cloud computing, AWS, GCP compliant computer systems, data engineering</li>
             </ul>
-
             <h2>Experience</h2>
             <ul>
                 <li>
@@ -162,12 +162,10 @@
                     <p>
                         Translational Medicine and Clinical Pharmacology - Boehringer Ingelheim Pharma GmbH & Co. KG, Biberach, Germany
                         <ul>
-                            <li> Cross-functional machine learning working group</li>
-                            <li> Innovative analysis strategies for clinical data sciences projects</li>
-                            <li> Biomarker analysis project using advanced machine learning models</li>
-                            <li> Application of physics-informed neural networks in clinical project</li>
-                            <li> Development of validated on-premise and cloud computing environment for clinical data science applications</li>
-                            <li> Academic collaborations and supervision of interns and postdoctoral researchers</li>
+                            <li>Cross-functional machine learning working group</li>
+                            <li>Innovative analysis strategies for clinical data sciences projects</li>
+                            <li>Biomarker analysis project using advanced machine learning models</li>
+                            <li>Application of physics-informed neural networks in clinical projects</li>
                         </ul>
                     </p>
                 </li>
@@ -176,42 +174,12 @@
                     <p>
                         Institute of Computational Biology & German Lung Research Center - Helmholtz Munich, Munich, Germany
                         <ul>
-                            <li> Senior postdoc at the department of computational biology</li>
-                            <li> Oncology biomarker discovery and spatial transcriptomics projects</li>
-                            <li> RNA seq analysis</li>
-                            <li> Inflammatory skin diseases</li>
-                            <li> Machine learning models for pharmacometrics analysis</li>
-                            <li> MATLAB code development for in-vitro cell exposure projects</li>
-                        </ul>
-                    </p>
-                </li>
-                <li>
-                    <h3>Research Scientist</h3>
-                    <p>
-                        Interdisciplinary Center for Scientific Computing - University of Heidelberg, Heidelberg, Germany
-                        <ul>
-                            <li>Developed predictive models for partial differential equations using HPC</li>
-                            <li>Performed image processing and segmentation of 3D complex human airways from CT images</li>
-                            <li>Simulated 3D airflow and analyzed drug motion for inhalers</li>
-                            <li>Optimized the design of drug delivery devices</li>
-                        </ul>
-                    </p>
-                </li>
-                <li>
-                    <h3>Research Engineer</h3>
-                    <p>
-                        BEKO AG / TOBB University of Economics and Technology, Ankara, Turkey
-                        <ul>
-                            <li>Developed software for partial differential equations</li>
-                            <li>Optimized the efficiency of washing drying machines</li>
-                            <li>Teaching assistant for C++ and Engineering Mathematics courses</li>
-                            <li>Top student in the department of engineering</li>
-                            <li>Received a full scholarship from the Turkish Ministry of Science and Technology</li>
+                            <li>Oncology biomarker discovery and spatial transcriptomics projects</li>
+                            <li>Machine learning models for pharmacometrics analysis</li>
                         </ul>
                     </p>
                 </li>
             </ul>
-
             <h2>Education</h2>
             <ul>
                 <li>
@@ -219,15 +187,11 @@
                     <p>Heidelberg University, Germany</p>
                 </li>
             </ul>
-
             <h2>Skills</h2>
             <ul>
                 <li>Data preprocessing, visualization, machine learning, and deep learning</li>
-                <li>Computational biology, bioinformatics, multi-omics data analysis, biostatistics, time series predictions, PKPD modeling</li>
+                <li>Computational biology, bioinformatics, multi-omics data analysis, biostatistics, time series predictions</li>
                 <li>Cloud computing, AWS, GCP compliant computer systems, data engineering</li>
-                <li>Programming Languages: Python, R, Julia, MATLAB, C, C++, Java</li>
-                <li>Operating Systems: Linux, Windows</li>
-                <li>Languages: English (Full Professional Proficiency), German (Fluent, B2), Turkish (Native), Persian (Native)</li>
             </ul>
         </div>
     </div>
