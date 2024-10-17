@@ -54,6 +54,11 @@
             margin-right: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             color: #ecf0f1;
+            height: auto; /* Automatically adjust the height to the content */
+            position: sticky; /* Sidebar sticks but doesn't scroll down */
+            top: 20px; /* The sidebar stays fixed after scrolling, 20px from the top */
+            display: flex;
+            flex-direction: column;
         }
         .sidebar img {
             width: 100%;
