@@ -1,32 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Ali Farnoud | Projects</title>
-    <style>
+    <style> 
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a2e;
-            color: #e0e0e0;
+            background-color: #1a1a2e; /* Deep teal blue */
+            color: #ecf0f1;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: #16213e;
+            background: #0f2a44; /* Dark navy blue */
             color: white;
             padding: 10px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal */
         }
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 10px 0 0;
+            margin: 10px 0 0 0;
             display: flex;
             justify-content: center;
         }
@@ -34,7 +32,7 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: #4ecca3;
+            color: #4ecca3; /* Lighter teal for links */
             text-decoration: none;
             font-weight: bold;
         }
@@ -49,19 +47,26 @@
         }
         .sidebar {
             width: 250px;
-            background: #2c3e50;
+            background: #305f72; /* Medium blue-teal */
             padding: 20px;
             margin-right: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             color: #ecf0f1;
-            position: sticky;
-            top: 0;
-            height: fit-content;
+            height: auto; /* Automatically adjust the height to the content */
+            position: sticky; /* Sidebar sticks but doesn't scroll down */
+            top: 20px; /* The sidebar stays fixed after scrolling */
+            display: flex;
+            flex-direction: column;
         }
         .sidebar img {
             width: 100%;
             border-radius: 50%;
             margin-bottom: 15px;
+        }
+        .sidebar h2 {
+            margin-bottom: 15px;
+            color: #ecf0f1;
+            text-align: center;
         }
         .sidebar ul {
             list-style: none;
@@ -80,25 +85,20 @@
         }
         .content {
             flex: 1;
-            background: #16213e;
+            background: #193446; /* Deep teal blue */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .content h2 {
             color: #4ecca3;
             margin-bottom: 20px;
-        }
-        .project-category {
-            margin-bottom: 20px;
             text-align: left;
         }
-        .project-category img {
-            max-width: 300px;
-            height: auto;
-            margin-bottom: 10px;
+        .content p {
+            margin-bottom: 20px;
         }
         footer {
-            background: #16213e;
+            background: #0f2a44;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -126,7 +126,6 @@
             </ul>
         </nav>
     </header>
-
     <div class="container">
         <div class="sidebar">
             <img src="photo.jpg" alt="Dr. Ali Farnoud">
@@ -140,7 +139,6 @@
                 <li><a href="https://orcid.org/0000-0002-9298-5497">ORCID</a></li>
             </ul>
         </div>
-
         <div class="content">
             <h2>Projects</h2>
             <div class="project-category">
@@ -154,13 +152,13 @@
             </div>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Ali Farnoud</p>
         <div class="social-media">
-            <a href="https://github.com/AFarnoud" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/ali-farnoud/" target="_blank">LinkedIn</a>
+            <a href="https://www.researchgate.net/profile/Ali-Farnoud" target="_blank">ResearchGate</a>
             <a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/ali-farnoud" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AFarnoud" target="_blank">GitHub</a>
         </div>
     </footer>
 </body>
