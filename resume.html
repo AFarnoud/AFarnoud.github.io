@@ -2,122 +2,455 @@
 <html>
 <head>
     <title>Dr. Ali Farnoud | Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a2e; /* Keep the background color consistent */
-            color: #ecf0f1;
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #ecf0f1;
+            line-height: 1.7;
+        }
+
         header {
-            background: #0f2a44; /* Dark navy blue */
+            background: linear-gradient(135deg, #0f2a44 0%, #193446 100%);
             color: white;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
+
         header h1 {
             margin: 0;
-            color: #4ecca3; /* Lighter teal */
+            color: #4ecca3;
+            font-size: 2em;
+            font-weight: 600;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 10px 0 0 0;
+            margin: 12px 0 0 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
+
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
+
         nav ul li a {
-            color: #4ecca3; /* Lighter teal for links */
+            color: #4ecca3;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
         }
+
         nav ul li a:hover {
-            text-decoration: underline;
+            background: rgba(78, 204, 163, 0.1);
+            color: #6effd4;
         }
+
         .container {
             display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 30px;
         }
+
         .sidebar {
-            width: 250px;
-            background: #305f72; /* Medium blue-teal */
-            padding: 20px;
-            margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 280px;
+            background: linear-gradient(135deg, #305f72 0%, #264653 100%);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             color: #ecf0f1;
-            height: auto; /* Automatically adjust the height to the content */
-            position: sticky; /* Sidebar sticks but doesn't scroll down */
-            top: 20px; /* The sidebar stays fixed after scrolling */
-            display: flex;
-            flex-direction: column;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
         }
+
         .sidebar img {
             width: 100%;
             border-radius: 50%;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            border: 4px solid #4ecca3;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+
         .sidebar h2 {
-            margin-bottom: 15px;
-            color: #ecf0f1;
+            margin-bottom: 20px;
+            color: #4ecca3;
             text-align: center;
+            font-size: 1.4em;
+            font-weight: 600;
         }
+
+        .contact-info {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(26, 26, 46, 0.4);
+            border-radius: 8px;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 0.9em;
+            word-break: break-word;
+        }
+
+        .contact-info a {
+            color: #4ecca3;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #6effd4;
+        }
+
         .sidebar ul {
             list-style: none;
             padding: 0;
         }
+
         .sidebar ul li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
+
         .sidebar ul li a {
-            color: #1abc9c;
+            color: #4ecca3;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: rgba(26, 26, 46, 0.3);
         }
+
         .sidebar ul li a:hover {
-            color: #16a085;
+            background: rgba(78, 204, 163, 0.2);
+            color: #6effd4;
+            transform: translateX(5px);
         }
+
         .content {
             flex: 1;
-            background: #193446; /* Deep teal blue */
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #193446;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
-        .content h2 {
+
+        .section {
+            margin-bottom: 45px;
+            padding-bottom: 35px;
+            border-bottom: 2px solid rgba(78, 204, 163, 0.2);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
             color: #4ecca3;
-            margin-bottom: 20px;
-            text-align: left;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        .content p {
-            margin-bottom: 20px;
+
+        .section-title::before {
+            content: '';
+            width: 5px;
+            height: 30px;
+            background: #4ecca3;
+            border-radius: 3px;
         }
-        .content ul {
-            list-style-type: square;
-            padding-left: 20px;
+
+        .summary-text {
+            background: rgba(78, 204, 163, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4ecca3;
+            line-height: 1.8;
         }
-        .content ul ul {
-            list-style-type: circle;
+
+        .summary-text ul {
+            list-style: none;
+            padding: 0;
         }
-        footer {
-            background: #0f2a44;
-            color: white;
-            text-align: center;
+
+        .summary-text ul li {
             padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .summary-text ul li::before {
+            content: '▸';
+            color: #4ecca3;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .job-card {
+            background: rgba(15, 42, 68, 0.5);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4ecca3;
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(78, 204, 163, 0.2);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .job-title {
+            color: #4ecca3;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .job-company {
+            color: #a8dadc;
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+
+        .job-location {
+            color: #8ab4ba;
+            font-size: 0.9em;
+        }
+
+        .job-date {
+            color: #4ecca3;
+            font-weight: 600;
+            font-size: 0.95em;
+            white-space: nowrap;
+        }
+
+        .job-achievements {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .job-achievements li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .job-achievements li::before {
+            content: '●';
+            color: #4ecca3;
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+        }
+
+        .education-item {
+            background: rgba(15, 42, 68, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4ecca3;
+        }
+
+        .education-title {
+            color: #4ecca3;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .education-details {
+            color: #a8dadc;
+            font-size: 0.95em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: rgba(15, 42, 68, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4ecca3;
+        }
+
+        .skill-category h3 {
+            color: #4ecca3;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+
+        .skill-category p {
+            line-height: 1.8;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .language-item {
+            background: rgba(15, 42, 68, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid rgba(78, 204, 163, 0.3);
+        }
+
+        .language-name {
+            color: #4ecca3;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .language-level {
+            color: #a8dadc;
+            font-size: 0.9em;
+        }
+
+        .awards-list, .certificates-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .awards-list li, .certificates-list li {
+            background: rgba(15, 42, 68, 0.5);
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #4ecca3;
+            transition: all 0.3s ease;
+        }
+
+        .awards-list li:hover, .certificates-list li:hover {
+            transform: translateX(5px);
+            background: rgba(15, 42, 68, 0.7);
+        }
+
+        .award-title, .certificate-title {
+            color: #4ecca3;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .award-details, .certificate-details {
+            color: #a8dadc;
+            font-size: 0.9em;
+        }
+
+        .publications-note {
+            background: rgba(78, 204, 163, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #4ecca3;
+            text-align: center;
             margin-top: 20px;
         }
-        .social-media a {
-            margin: 0 10px;
+
+        .publications-note p {
+            margin: 8px 0;
+            font-size: 1em;
+        }
+
+        .publications-note a {
             color: #4ecca3;
             text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
+
+        .publications-note a:hover {
+            color: #6effd4;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0f2a44 0%, #193446 100%);
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-media {
+            margin-top: 15px;
+        }
+
+        .social-media a {
+            margin: 0 12px;
+            color: #4ecca3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
         .social-media a:hover {
-            text-decoration: underline;
+            background: rgba(78, 204, 163, 0.1);
+            color: #6effd4;
+        }
+
+        @media (max-width: 968px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -133,98 +466,343 @@
             </ul>
         </nav>
     </header>
+
     <div class="container">
         <div class="sidebar">
             <img src="photo.jpg" alt="Dr. Ali Farnoud">
             <h2>Dr. Ali Farnoud</h2>
+
+            <div class="contact-info">
+                <p><strong>Location:</strong> Biberach an der Riß, Germany</p>
+                <p><strong>Phone:</strong> +49 15238413322</p>
+                <p><strong>Email:</strong> <a href="mailto:alifarnod@gmail.com">alifarnod@gmail.com</a></p>
+            </div>
+
             <ul>
-                <li><a href="https://www.researchgate.net/profile/Ali-Farnoud">ResearchGate</a></li>
-                <li><a href="https://x.com/Farnoud_Ali">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/ali-farnoud/">LinkedIn</a></li>
-                <li><a href="https://github.com/AFarnoud/">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ">Google Scholar</a></li>
-                <li><a href="https://orcid.org/0000-0002-9298-5497">ORCID</a></li>
+                <li><a href="https://www.linkedin.com/in/ali-farnoud/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/AFarnoud/" target="_blank">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ" target="_blank">Google Scholar</a></li>
+                <li><a href="https://orcid.org/0000-0002-9298-5497" target="_blank">ORCID</a></li>
+                <li><a href="https://www.researchgate.net/profile/Ali-Farnoud" target="_blank">ResearchGate</a></li>
+                <li><a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a></li>
             </ul>
         </div>
+
         <div class="content">
-            <h2>Summary of Qualifications</h2>
-            <ul>
-                <li>Experienced in clinical data sciences, biostatistics, machine learning (ML), and PKPD modeling and simulations.</li>
-                <li>Managed cross-functional projects, driving innovation in quantitative clinical pharmacology.</li>
-                <li>Passionate about leveraging scientific methodologies and advanced technologies to accelerate clinical drug development.</li>
-                <li>Software development lead, cloud computing, Gxp computer systems validation, business system leadership.</li>
-            </ul>
+            <!-- Professional Summary -->
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="summary-text">
+                    <ul>
+                        <li>Led AI initiatives in clinical pharmacology, integrating LLMs and multi-agent solutions for regulatory-compliant clinical data analysis</li>
+                        <li>Leadership experience managing cross-functional teams of clinical data scientists, software engineers, and IT teams in international settings</li>
+                        <li>Technical background in machine learning, biostatistics, and quantitative pharmacology with focus on regulatory-compliant AI implementations</li>
+                        <li>Academic foundation in AI/ML and computational sciences with proven track record in collaborative research and industry partnerships</li>
+                        <li>Multilingual professional with deep understanding of European research environments and pharmaceutical development processes</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <h3>Senior Data Scientist</h3>
-                    <p>Translational Medicine and Clinical Pharmacology - Boehringer Ingelheim, Jan 2023 – Present</p>
-                </li>
-                <li>
-                    <h3>Senior Pharmacometrician</h3>
-                    <p>Translational Medicine and Clinical Pharmacology - Boehringer Ingelheim, March 2022 – Dec 2022</p>
-                </li>
-                <li>
-                    <h3>Postdoctoral Researcher</h3>
-                    <p>Institute of Computational Biology - Helmholtz Munich, July 2018 – March 2022</p>
-                </li>
-                <li>
-                    <h3>Research Scientist</h3>
-                    <p>Interdisciplinary Center for Scientific Computing - University of Heidelberg, Feb 2015 – June 2018</p>
-                </li>
-                <li>
-                    <h3>Research Engineer</h3>
-                    <p>BEKO AG / TOBB University of Economics and Technology, March 2013 – Dec 2014</p>
-                </li>
-            </ul>
+            <!-- Work Experience -->
+            <div class="section">
+                <h2 class="section-title">Work Experience</h2>
 
-            <h2>Education</h2>
-            <ul>
-                <li>PhD in Applied Mathematics and Computer Science - Heidelberg University, 2015-2018</li>
-                <li>MSc in Mechanical Engineering - TOBB University of Economics and Technology, 2013-2014</li>
-                <li>MSc in Mechanical Engineering - Gazi University, 2012-2013</li>
-                <li>B.A.Sc. in Mechanical Engineering – Heat and Fluid Mechanics - University of Tabriz, 2007-2011</li>
-            </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Co-Founder - CTO</div>
+                            <div class="job-company">FireQSP</div>
+                            <div class="job-location">Munich, Germany</div>
+                        </div>
+                        <div class="job-date">Sept 2024 - Present</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Partnership with MATLAB</li>
+                        <li>Architected a multi-agentic workflow for quantitative pharmacology model development automation</li>
+                        <li>Reduced the QSP model development timeline by 10x</li>
+                        <li>Clinical Pharmacology AI platform enabling agentic workflows for 60+ users working on submission-relevant analysis</li>
+                        <li>Provided strategic consultation to Clinical Pharmacology leadership team on implementing agentic workflows for departmental transformation</li>
+                        <li>Delivered quantitative systems pharmacology (QSP) solution integrating multi-agent workflows to semi-automate QSP model development, accelerating clinical workflows by 40%</li>
+                        <li>Architected cloud migration strategy for clinical pharmacology department ensuring scalable computational infrastructure</li>
+                        <li>Represented Boehringer Ingelheim in cross-industry AI initiatives including clinical pharmacology AI, biomarker AI, and QSP AI (collaborations with AbbVie, Sanofi, and Roche, etc.)</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><a href="https://fireqsp.com/" target="_blank" style="color: #4ecca3; text-decoration: none; font-weight: 600;">🔗 fireqsp.com</a></p>
+                </div>
 
-            <h2>Skills</h2>
-            <ul>
-                <li>Biostatistics, Machine Learning, Data Visualization</li>
-                <li>Tech leadership, PopPK/PD, PBPK, ODE/PDE solvers</li>
-                <li>Data preprocessing, Mathematics, Data Analysis</li>
-            </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Clinical Pharmacology AI Group Lead</div>
+                            <div class="job-company">Clinical Pharmacology Group - Boehringer Ingelheim</div>
+                            <div class="job-location">Biberach, Germany</div>
+                        </div>
+                        <div class="job-date">Sept 2024 - Present</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Coordinated multidisciplinary team of 15 specialists across clinical data science, software engineering, and pharmacometrics</li>
+                        <li>Developed Clinical Pharmacology AI platform enabling agentic workflows for 60+ users working on submission-relevant analysis</li>
+                        <li>Provided strategic consultation to Clinical Pharmacology leadership team on implementing agentic workflows for departmental transformation</li>
+                        <li>Architected cloud migration strategy for clinical pharmacology department ensuring scalable computational infrastructure</li>
+                        <li>Represented Boehringer Ingelheim in cross-industry AI initiatives including clinical pharmacology AI, biomarker AI, and QSP AI (collaborations with AbbVie, Sanofi, and Roche, etc.)</li>
+                    </ul>
+                </div>
 
-            <h2>Languages</h2>
-            <ul>
-                <li>English: Full Professional Proficiency</li>
-                <li>German: Fluent, B2</li>
-                <li>Turkish: Native or Bilingual Proficiency</li>
-                <li>Persian: Native or Bilingual Proficiency</li>
-            </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Co-founder</div>
+                            <div class="job-company">PolarisAI</div>
+                            <div class="job-location">Munich, Germany</div>
+                        </div>
+                        <div class="job-date">July 2023 - Present</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Co-founded a startup leveraging tech and machine learning for asset investment</li>
+                        <li>Developed AI-driven software that utilized fundamental and technical analysis, combined with advanced ML and statistical methods</li>
+                        <li>Successfully launched a software for effective investment portfolio management</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><a href="polarisai.html" style="color: #4ecca3; text-decoration: none; font-weight: 600;">🔗 Learn more about PolarisAI</a></p>
+                </div>
 
-            <h2>Awards</h2>
-            <ul>
-                <li>Excellence Initiative Scholarship for PhD studies (2015 – 2018), DFG</li>
-                <li>Best Poster Presentation Award (2016), HGS MathComp</li>
-                <li>Paul Eisenklam Young Researcher Travel Award (2014), ILASS14 Conference</li>
-            </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Clinical Data Scientist - ML Group co-Lead</div>
+                            <div class="job-company">Translational Medicine and Clinical Pharmacology - Boehringer Ingelheim</div>
+                            <div class="job-location">Biberach, Germany</div>
+                        </div>
+                        <div class="job-date">Jan 2023 - Sept 2024</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Coordinated Data & Tech ML activities within cross-functional working groups for machine learning strategy development</li>
+                        <li>Conducted biomarker analysis for NAFLD fibrosis stage prediction using advanced machine learning and statistical modeling approaches</li>
+                        <li>Co-led academic collaboration with the University of Tübingen on physics-informed neural networks application in systems pharmacology for Chronic Kidney Disease research</li>
+                        <li>Coordinated cross-functional team of 8 specialists (IT, Quality, Business) to establish robust computational infrastructure for TMCP data analysis teams</li>
+                        <li>Established validated computing environment leading cross-functional teams (IT, Quality, Business) for clinical data science applications</li>
+                        <li>Supervised research personnel including interns and postdoctoral researchers while publishing 20+ scientific articles including two in Nature Communications</li>
+                    </ul>
+                </div>
 
-            <h2>Editorial and Reviewing Activities</h2>
-            <ul>
-                <li>Guest Editor: All Life, Pharmaceuticals, Fluids, Sinusitis</li>
-                <li>Reviewer: Computers in Biology and Medicine, Advanced Sciences, PLOS ONE, Pharmaceutics, Pharmaceuticals, Physics of Fluids</li>
-            </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Pharmacometrician</div>
+                            <div class="job-company">Translational Medicine and Clinical Pharmacology - Boehringer Ingelheim</div>
+                            <div class="job-location">Ingelheim, Germany</div>
+                        </div>
+                        <div class="job-date">March 2022 - Dec 2022</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Established knowledge transfer programs including Pharmacometrics Knowledge Hour, providing training on R, machine learning, and advanced statistical methodologies</li>
+                        <li>Managed clinical data science projects in collaboration with external CROs, delivering analysis reports for regulatory submissions</li>
+                        <li>Applied innovative methodologies integrating physics-informed neural networks with nonlinear mixed effects models, presenting results at conferences</li>
+                        <li>Evaluated statistical and ML methods for PKPD analysis supporting clinical trial decision-making across oncology portfolio</li>
+                        <li>Participated in cross-functional working groups and coordinated industry collaborations with academic experts</li>
+                        <li>Coordinated pharmacometrics AI/ML strategic roadmap development and implementation across therapeutic areas</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Postdoctoral Researcher</div>
+                            <div class="job-company">Institute of Computational Biology - Helmholtz AI/Helmholtz Munich</div>
+                            <div class="job-location">Munich, Germany</div>
+                        </div>
+                        <div class="job-date">July 2018 - March 2022</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Managed research team supervising 2 PhD and 8 Master's students in computational biology projects</li>
+                        <li>Co-led international consortium project SmartNanoTox with 9 European partners and €8M total funding, developing MATLAB-based computational frameworks</li>
+                        <li>Coordinated academic partnerships with Karolinska Institute and Technical University of Munich on AI solutions for inflammatory disease research</li>
+                        <li>Developed computational analysis platform for spatial transcriptomics in inflammatory skin diseases, published in Nature Communications</li>
+                        <li>Contributed as AI lead for ML-driven pharmacometrics analysis for EU project UNITE4TB, collaboration with GSK</li>
+                        <li>Managed €4M collaborative project with Fraunhofer and Max Planck Institutes on nano-drug delivery computational pharmacology</li>
+                        <li>Presented and published scientific articles in conferences and journals</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Research Scientist</div>
+                            <div class="job-company">Interdisciplinary Center for Scientific Computing - University of Heidelberg</div>
+                            <div class="job-location">Heidelberg, Germany</div>
+                        </div>
+                        <div class="job-date">Feb 2015 - June 2018</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Solved partial differential equations (PDEs) using high performance computers (HPC)</li>
+                        <li>Image processing and Segmentation of 3D complex human airways from CT images</li>
+                        <li>Optimized the drug delivery device of PARI Respiratory Equipment Inc.</li>
+                        <li>Image processing and segmentation of human respiratory system from CT images</li>
+                        <li>Presented technical reports in R&D department of industrial partner</li>
+                        <li>Published and presented results in journals and conferences</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Research Engineer</div>
+                            <div class="job-company">R&D - BEKO AG / TOBB University of Economics and Technology</div>
+                            <div class="job-location">Ankara, Turkey</div>
+                        </div>
+                        <div class="job-date">March 2013 - Dec 2014</div>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Developed software for PDEs</li>
+                        <li>Optimized the efficiency of washing drying machines of BEKO</li>
+                        <li>Teaching assistant for C++, Engineering Mathematics courses</li>
+                        <li>Top student at department of mechanical engineering (Note: 1.0)</li>
+                        <li>Full fund scholarship from Turkish Ministry of Science and Technology</li>
+                        <li>Paul Eisenklam young researcher travel award (ILASS14 Conference, Bremen, Germany)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education-item">
+                    <div class="education-title">PhD, Faculty of Natural Sciences and Mathematics</div>
+                    <div class="education-details">Interdisciplinary Center for Scientific Computing, Heidelberg University | Heidelberg, Germany | Feb 2015 - June 2018</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-title">M.Sc., Mechanical Engineering</div>
+                    <div class="education-details">TOBB University of Economics and Technology | Ankara, Turkey | March 2013 - Dec 2014</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-title">M.Sc., Mechanical Engineering</div>
+                    <div class="education-details">Gazi University | Ankara, Turkey | Jan 2012 - Feb 2013</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-title">B.A.Sc. Mechanical Engineering</div>
+                    <div class="education-details">University of Tabriz | Tabriz, Iran | Sept 2007 - Sept 2011</div>
+                </div>
+            </div>
+
+            <!-- Technical Competencies -->
+            <div class="section">
+                <h2 class="section-title">Technical Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>ML & GenAI</h3>
+                        <p>Neural Networks | Conventional ML (classification, clustering, regression) | Gen AI (LLMs, Transformers, Prompt Engineering) | Agentic AI Workflows | RAG Systems | Enterprise AI | Databricks | Cloud Computing (GxP-Compliant)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Clinical Data Science</h3>
+                        <p>Population PK/PD | Quantitative Pharmacology | Machine Learning | Biostatistics | Spatial Transcriptomics | Advanced Statistical Modeling</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming & Leadership</h3>
+                        <p>Python, R (Advanced) | MATLAB, Julia | Cross-Functional Team Management | Academic-Industry Leadership | International Project Leadership</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="section">
+                <h2 class="section-title">Languages</h2>
+                <div class="languages-grid">
+                    <div class="language-item">
+                        <div class="language-name">English</div>
+                        <div class="language-level">Professional Working Proficiency</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">German</div>
+                        <div class="language-level">Upper Intermediate (B2)</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">Turkish</div>
+                        <div class="language-level">Native</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">Persian</div>
+                        <div class="language-level">Native</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificates -->
+            <div class="section">
+                <h2 class="section-title">Certificates</h2>
+                <ul class="certificates-list">
+                    <li>
+                        <div class="certificate-title">Harvard Medical School - HMX Pro Pharmacology - Clinical Drug Development</div>
+                    </li>
+                    <li>
+                        <div class="certificate-title">Harvard Medical School - AI in Medicine - Natural Language Processing</div>
+                    </li>
+                    <li>
+                        <div class="certificate-title">Pharmacometrics Statistics, TACA Training</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Awards -->
+            <div class="section">
+                <h2 class="section-title">Awards</h2>
+                <ul class="awards-list">
+                    <li>
+                        <div class="award-title">Excellence Initiative Scholarship for PhD studies (2015 – 2018)</div>
+                        <div class="award-details">DFG (German Research Foundation)</div>
+                    </li>
+                    <li>
+                        <div class="award-title">Best Poster Presentation Award (12/2016)</div>
+                        <div class="award-details">HGS MathComp Annual Colloquium 2016 / Heidelberg University</div>
+                    </li>
+                    <li>
+                        <div class="award-title">Paul Eisenklam Young Researcher Travel Award (09/2014)</div>
+                        <div class="award-details">ILASS14 / 26th European Conference Liquid Atomization & Spray Systems</div>
+                    </li>
+                    <li>
+                        <div class="award-title">Scholarship for Master Studies (2013 – 2015)</div>
+                        <div class="award-details">Turkish Ministry of Science and Technology</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Editorial and Reviewing Activities -->
+            <div class="section">
+                <h2 class="section-title">Editorial and Reviewing Activities</h2>
+                <div class="education-item" style="margin-bottom: 15px;">
+                    <div class="education-title">Guest Editor</div>
+                    <div class="education-details">All Life, Pharmaceuticals, Fluids, Sinusitis</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">Reviewer</div>
+                    <div class="education-details">Computers in Biology and Medicine, Advanced Sciences, PLOS ONE, Pharmaceutics, Pharmaceuticals, Physics of Fluids, Applied Sciences</div>
+                </div>
+            </div>
+
+            <!-- Selected Publications -->
+            <div class="section">
+                <h2 class="section-title">Selected Scientific Publications</h2>
+                <div class="publications-note">
+                    <p><strong>View complete publication list:</strong></p>
+                    <p><a href="https://scholar.google.com/citations?user=hMi526QAAAAJ" target="_blank">Google Scholar</a> |
+                    <a href="https://orcid.org/0000-0002-9298-5497" target="_blank">ORCID: 0000-0002-9298-5497</a> |
+                    <a href="https://afarnoud.github.io/index.html" target="_blank">Personal Website</a></p>
+                    <p style="margin-top: 15px;">Recent highlights include publications in <strong>Nature Communications</strong> and <strong>CPT: Pharmacometrics & Systems Pharmacology</strong></p>
+                </div>
+            </div>
         </div>
     </div>
+
     <footer>
-        <p>&copy; 2024 Ali Farnoud</p>
+        <p>&copy; 2025 Ali Farnoud</p>
         <div class="social-media">
-            <a href="https://www.researchgate.net/profile/Ali-Farnoud" target="_blank">ResearchGate</a>
-            <a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a>
             <a href="https://www.linkedin.com/in/ali-farnoud/" target="_blank">LinkedIn</a>
             <a href="https://github.com/AFarnoud/" target="_blank">GitHub</a>
             <a href="https://scholar.google.com/citations?user=hMi526QAAAAJ" target="_blank">Google Scholar</a>
             <a href="https://orcid.org/0000-0002-9298-5497" target="_blank">ORCID</a>
+            <a href="https://www.researchgate.net/profile/Ali-Farnoud" target="_blank">ResearchGate</a>
+            <a href="https://x.com/Farnoud_Ali" target="_blank">Twitter</a>
         </div>
     </footer>
 </body>
